@@ -8,6 +8,8 @@ Specific to a workflow of the Bibliotheca Hertziana.
 python3 addmeta.py [-h] -u URI -i INPUTFILE -c CSVFILE [-o OUTPUTFILE]
 ```
 
+`INPUTFILE` and `CSVFILE` can be URLs.
+
 ## CSV structure:
 
 Use level to nest TOC entries.
