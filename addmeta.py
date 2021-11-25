@@ -87,9 +87,10 @@ def addmeta():
         for item in manifest["items"]:
             if item["type"] == "Canvas":
                 if item["id"] == f"{args.URI}/canvas/{page}":
-                    item["label"] = {
-                        "none": [canvas]
-                    }
+                    if canvas != "":
+                        item["label"] = {
+                            "none": [canvas]
+                        }
     # Write out new manifest
     outputfile = args.outputfile
     if not outputfile:
