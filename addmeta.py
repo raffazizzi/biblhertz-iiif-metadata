@@ -81,7 +81,7 @@ def addmeta():
                     #     obj["items"] = []
                     return storeAtLevel(lv-1, obj[-1]["items"])
             items.append(storeAtLevel(int(level), accumulator))
-        manifest["structures"][0]["items"] = items[0]
+            manifest["structures"][0]["items"] = items[0]
 
         # Adjust Canvas label
         for item in manifest["items"]:
